@@ -1,3 +1,6 @@
+#IMPORTANT
+this cyber lab is an educational build from a cybersecurity student thats in highschool this isnt a fully professional built it has vulnerbailities but its in the goal of building something learning how systems work and trying it out for my self and for future credit and being said thats why its being documented right now
+
 # Flask Attack/Defense Lab
 
 Multi-component lab simulating common attack patterns (brute force, DDoS, webshell upload) against a Flask app, with an application-layer defense module mapped to MITRE ATT&CK.
@@ -55,25 +58,28 @@ python webshell.py --target <LAN_IP>:<port>
 ## Known Limitations
 
 - IP blocking is application-layer only (not enforced at OS/firewall level) — trades robustness for zero-admin-privilege setup
-- [add: single-host lab, not tested against distributed/multi-source attacks]
-- [add: no persistence of block state across app restarts, if applicable]
-- [add: any other limitation specific to your testing]
+- tested in an offline local enviroment not in a real situation
+- if the app was restarted then the blocklist is clear
+- slow brute force can crack the detection
+-no blocking of accounts just ip
 
 proof of firewall 
 before firewall 
 
 <img width="1600" height="820" alt="brute before firewall" src="https://github.com/user-attachments/assets/00597b31-e13f-4f9e-91c9-720a3a4087f5" />
-
+in this image we can see easily how the brute force is succesful and cracking the password
 <img width="801" height="422" alt="ddos before firewall" src="https://github.com/user-attachments/assets/ce0d0e80-23ca-4062-8d02-f2f35c64521d" />
-
+in this image the ddos attack (pings) are meant to simulate a ddos attack and are succesful due to no firewall or lack of seucirty measures
 <img width="1600" height="846" alt="webshell before firewall" src="https://github.com/user-attachments/assets/46dc5700-eba8-4349-8e08-846fb9e32788" />
+succesfull webshell connection + commmands are being fired 
+
 after firewall
 <img width="1600" height="849" alt="brute after firewall" src="https://github.com/user-attachments/assets/dee132dc-a714-467d-8835-0e15808003a5" />
-
+after the firewall embedding the brute force attack is blocked after too many requests per second 
 <img width="1491" height="956" alt="ddos after firewall" src="https://github.com/user-attachments/assets/5edb3516-2dae-421c-8dcd-627eb7eddd2f" />
-
-  <img width="1600" height="844" alt="webshell after firewall" src="https://github.com/user-attachments/assets/0b4401b4-d709-4b31-a182-4f0d23e412a4" />
-
+ddos attack blocked due to to many ping requests 
+<img width="1600" height="844" alt="webshell after firewall" src="https://github.com/user-attachments/assets/0b4401b4-d709-4b31-a182-4f0d23e412a4" />
+webshell blocked after there is a detection with a first request being succesful and later being blocked with a 403 requests
   
 
 
