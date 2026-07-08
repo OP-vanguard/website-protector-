@@ -61,13 +61,17 @@ python webshell.py --target <LAN_IP>:<port>
 
 proof of firewall 
 before firewall 
+
 <img width="1600" height="820" alt="brute before firewall" src="https://github.com/user-attachments/assets/00597b31-e13f-4f9e-91c9-720a3a4087f5" />
+
 <img width="801" height="422" alt="ddos before firewall" src="https://github.com/user-attachments/assets/ce0d0e80-23ca-4062-8d02-f2f35c64521d" />
+
 <img width="1600" height="846" alt="webshell before firewall" src="https://github.com/user-attachments/assets/46dc5700-eba8-4349-8e08-846fb9e32788" />
 after firewall
 <img width="1600" height="849" alt="brute after firewall" src="https://github.com/user-attachments/assets/dee132dc-a714-467d-8835-0e15808003a5" />
-<img width="1491" height="956" alt="ddos after firewall" src="https://github.com/user-attachments/assets/65c417ea-649c-4dac-8f0e-
-  96dca599da84" />
+
+<img width="1491" height="956" alt="ddos after firewall" src="https://github.com/user-attachments/assets/5edb3516-2dae-421c-8dcd-627eb7eddd2f" />
+
   <img width="1600" height="844" alt="webshell after firewall" src="https://github.com/user-attachments/assets/0b4401b4-d709-4b31-a182-4f0d23e412a4" />
 
   
