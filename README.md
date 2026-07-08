@@ -1,5 +1,5 @@
 #IMPORTANT
-this cyber lab is an educational build from a cybersecurity student thats in highschool this isnt a fully professional built it has vulnerbailities but its in the goal of building something learning how systems work and trying it out for my self and for future credit and being said thats why its being documented right now
+Educational lab built by a self-directed cybersecurity student — intentionally vulnerable by design, built to practice detection engineering and attack simulation, not a production security tool.
 
 # Flask Attack/Defense Lab
 
