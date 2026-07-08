@@ -59,7 +59,6 @@ python webshell.py --target <LAN_IP>:<port>
 
 - IP blocking is application-layer only (not enforced at OS/firewall level) — trades robustness for zero-admin-privilege setup
 - tested in an offline local enviroment not in a real situation
-- if the app was restarted then the blocklist is clear
 - slow brute force can crack the detection
 -no blocking of accounts just ip
 
